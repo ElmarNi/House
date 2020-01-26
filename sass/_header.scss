@@ -1,0 +1,108 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 32px 40px 15px 40px;
+    z-index: 999;
+    i{
+        color: $mainColor;
+        font-size: 23px;
+    }
+    p.number{
+        a{
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.33em;
+            letter-spacing: 2.2px;
+            color: #ffffff;
+        }
+        margin: 0;
+    }
+    p.adress{
+        color: white;
+        margin: 0;
+        font-size: 15px;
+    }
+    img{
+        height: 19px;
+        width: 124px;
+    }
+
+}
+nav#menu{
+    opacity: 0;
+    background-color: #e5e5edf5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all .5s ease;
+    ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        li{
+            margin-bottom: 30px;
+            position: relative;
+            a{
+                font-size: 44px;
+                color: #343549;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 4px;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            &:before{
+                content: ' ';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0%;
+                height: 4px;
+                background-color: $mainColor;
+                transition: all .3s ease;
+            }
+            &:hover{
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #close-menu{
+        position: absolute;
+        left: 35px;
+        top: 14px;
+        font-size: 40px;
+        color: $mainColor;
+    }
+}
+nav#menu.active{
+    opacity: 1;
+    transition: all .5s ease;
+}
+@media (max-width: 991.98px) {
+    header p.number a{
+        color: $mainColor;
+    }
+    header p.adress{
+        color: #717280;
+    }
+    nav#menu ul li a{
+        font-size: 36px;
+    }
+}
+@media (max-width: 767.98px){
+    nav#menu ul li a{
+        font-size: 21px;
+    }
+}

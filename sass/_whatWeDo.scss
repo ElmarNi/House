@@ -1,0 +1,24 @@
+#WhatWeDo{
+    .content{
+        padding: 70px 40px 72px 160px;
+    }
+    .common-btn{
+        &:before, &:after{
+            content: 'contact with us';
+        }
+
+    }
+}
+@media (max-width: 991.98px) { 
+    #WhatWeDo .content {
+        padding: 30px 20px 30px 30px;
+    }
+    #WhatWeDo .image{
+        max-height: 425px;
+    }
+}
+@media (max-width: 767px){
+    #WhatWeDo .content {
+        padding: 0px 15px 40px 15px;
+    }
+}

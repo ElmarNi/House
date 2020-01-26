@@ -1,0 +1,84 @@
+$mainColor: #D29C7D;
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+section{
+    padding: 140px 0;
+}
+.section-header{
+    color: #343549;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.31em;
+}
+.line{
+    height: 44px;
+    background: $mainColor;
+    width: 6px;
+    margin-bottom: 50px;
+}
+.section-short-paragraphs{
+    color: #717280;
+    font-size: 20px;
+    line-height: 1.41em;
+}
+.common-btn{
+    padding: 0;
+    position: relative;
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    border: none;
+    background: white;
+    border: none;
+    &:before{
+        color: $mainColor;
+    }
+    &:after{
+        left: 100%;
+        z-index: 1;
+        background-color: $mainColor;
+        color: white;
+    }
+    &:after, &:before{
+        top: 0;
+        text-transform: uppercase;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        transition: all .4s ease;
+    }
+    &:hover{
+        &:before{
+            top: 100%;
+        }
+        &:after{
+            left: 0%;
+        }
+    }
+    .overlay{
+        border: 2px solid #f1e1d8;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+@media (max-width: 991.98px) { 
+    section{
+        padding: 80px 0 !important;
+    }
+    .section-short-paragraphs{
+        font-size: 18px !important;
+    }
+    .section-header{
+        font-size: 28px !important;
+    }
+}
