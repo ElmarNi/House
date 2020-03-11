@@ -1,0 +1,50 @@
+#singleProject{
+    .content{
+        padding: 20px 40px 20px 110px;;
+    }
+    .information{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                display: flex;
+                p{
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                p.left{
+                    color: #343549;
+                }
+                p.right{
+                    margin-left: 5px;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+
+}
+#gallery{
+    img{
+        height: 200px !important;
+    }
+}
+@media (max-width: 991.98px) { 
+    #singleProject .content {
+        padding: 30px 20px 30px 30px !important;
+    }
+}
+@media (max-width: 767px){
+    #singleProject .content {
+        padding: 0px 15px 40px 15px !important;
+    }
+    #singleProject{
+        .line{
+            div{
+                width: 44px;
+                height: 6px;
+            }
+        }
+    }
+}

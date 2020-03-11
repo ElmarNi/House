@@ -3,19 +3,22 @@ body{
     font-family: 'Red Hat Display', sans-serif;
 }
 section{
-    padding: 140px 0;
+    padding: 100px 0;
 }
 .section-header{
     color: #343549;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 1.31em;
 }
 .line{
-    height: 44px;
-    background: $mainColor;
-    width: 6px;
     margin-bottom: 50px;
+    div{
+        height: 44px;
+        background: $mainColor;
+        width: 6px;
+        display: inline-block;
+    }
 }
 .section-short-paragraphs{
     color: #717280;
@@ -31,6 +34,9 @@ section{
     border: none;
     background: white;
     border: none;
+    &:focus{
+        outline: transparent;
+    }
     &:before{
         color: $mainColor;
     }
@@ -71,6 +77,24 @@ section{
         bottom: 0;
     }
 }
+.page-header-section{
+    padding-top: 200px !important;
+    .page-header{
+        font-size: 62px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.32em;
+        letter-spacing: 18.5px;
+        color: #343549;
+        position: relative;
+    }
+    .line{
+        div{
+            height: 6px;
+            width: 44px;
+        }
+    }
+}
 @media (max-width: 991.98px) { 
     section{
         padding: 80px 0 !important;
@@ -80,5 +104,19 @@ section{
     }
     .section-header{
         font-size: 28px !important;
+    }
+}
+@media (max-width: 767px){
+    .page-header-section{
+        .page-header{
+            font-size: 34px;
+            letter-spacing: 8px;
+        }
+    }
+    .section-short-paragraphs{
+        font-size: 16px !important;
+    }
+    section{
+        padding: 60px 0 !important;
     }
 }

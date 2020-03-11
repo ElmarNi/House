@@ -1,0 +1,63 @@
+#achives{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1a2bad;
+    background-blend-mode: color;
+    .number{
+        h2{
+            color: $mainColor;
+            font-size: 90px;
+            line-height: 1.32em;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+    .text-zone{
+        p{
+            font-size: 20px;
+            margin: 0;
+            color: white;
+        }
+        h2{
+            font-size: 42px;
+            color: white;
+        }
+    }
+    .common-btn{
+        background: transparent;
+        &:before, &:after{
+            content: 'contact with us';
+        }
+        &:before{
+            color: white;
+        }
+        .overlay{
+            border-color: white;
+        }
+        &:after{
+            background: white;
+            color: $mainColor;
+        }
+    }
+}
+@media (max-width: 991.98px) { 
+    #achives .number h2{
+        font-size: 60px;
+    }
+    #achives .text-zone h2{
+        font-size: 36px;
+    }
+}
+@media (max-width: 767.98px) { 
+    #achives .number h2{
+        font-size: 44px;
+    }
+    #achives .text-zone h2{
+        font-size: 26px;
+    }
+    #achives .text-zone p{
+        font-size: 16px;
+    }
+}

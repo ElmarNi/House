@@ -1,0 +1,151 @@
+#whoAreWe{
+    h1{
+        font-size: 42px;
+        color: #343549;
+    }
+}
+#ourHistory{
+
+    p{
+        color: white;
+        font-size: 20px;
+    }
+}
+#ourPrinciples, #ourHistory{
+    h1, h3{
+        color: white;
+    }
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1a2bad;
+    background-blend-mode: color;
+}
+#ourMission, #ourHistory, #ourPrinciples{
+    h1{
+        font-size: 42px;
+    }
+    h3{
+        font-size: 28px;
+    }
+}
+#ourMission{
+    h1{
+        color: #343549;
+    }
+    h3{
+        color: #717280;
+    }
+}
+@media (max-width: 991.98px) { 
+    #whoAreWe h1{
+        font-size: 32px;
+    }
+    #ourHistory, #ourMission, #ourPrinciples {
+        h1{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width: 767px){
+    #whoAreWe h1{
+        font-size: 24px;
+    }
+    #ourHistory, #ourMission, #ourPrinciples {
+        h3{
+            font-size: 20px;
+        }
+    }
+    #ourHistory, #ourMission, #ourPrinciples {
+        .line{
+            div{
+                width: 44px;
+                height: 6px;
+            }
+        }
+    }
+}
+
+#contact-success{
+    body, html {
+        background: #eee;
+      }
+      
+      div {
+        float: left;
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        border: 1px solid rgba(0,0,0,0.2);
+      }
+      
+      div p {
+          position: relative;
+          text-align: center;
+          padding-top: 20px;
+          font-size: 40px;
+          color: #eee;
+          font-family: "Oswald";
+      }
+      
+      div:nth-child(1) {
+        background: #8dd1c1;
+        animation: appear 1s 1s ease forwards; 
+      }
+      
+      div:nth-child(2) {
+        background: #373946;
+        animation: appear 1s 2s ease forwards; 
+      }
+      
+      div:nth-child(3) {
+        background: #d1c58c;
+        animation: appear 1s 3s ease forwards; 
+      }
+      
+      div:nth-child(4) {
+        background: #f5f0eb;
+        p {
+          color: #2d2c3b;
+        }
+        animation: appear 1s 4s ease forwards; 
+      }
+      
+      div:nth-child(5) {
+        background: #2d2c3b;
+        clear: left;
+        animation: appear 1s 5s ease forwards; 
+      }
+      
+      div:nth-child(6) {
+        background: rgba(23,232,152,0.5);
+        p {
+          color: #2d2c3b;
+        }
+        animation: appear 1s 6s ease forwards; 
+      }
+      div:nth-child(7) {
+        background: #373946;
+        animation: appear 1s 7s ease forwards; 
+      }
+      
+      div:nth-child(8) {
+         background: url('https://media.licdn.com/media/p/4/005/041/210/2978923.jpg');
+        background-size: cover;
+        animation: appear 1s 8s ease forwards; 
+      }
+      
+      @keyframes appear{
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+}

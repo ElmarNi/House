@@ -1,0 +1,38 @@
+#contact-form{
+    .common-btn{
+        &:before, &:after{
+            content: 'submit';
+        }
+    }
+    form{
+        .input-wrapper{
+            position: relative;
+            border-bottom: 3px solid #F2E1D8;
+            .bottom-line{
+                width: 0%;
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                height: 3px;
+                background-color: $mainColor;
+                transition: all .3s ease;
+            }
+            input, textarea{
+                border-color: transparent;
+                color: #343549;
+                font-size: 26px;
+                padding: 0;
+                font-weight: bold;
+                &:focus{
+                    border-color: transparent;
+                    box-shadow: none;
+                }
+                &::placeholder{
+                    color: #343549;
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

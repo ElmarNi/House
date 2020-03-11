@@ -1,0 +1,74 @@
+#footer{
+    .number{
+        font-size: 24px;
+        color: #343549;
+        font-weight: bold;
+        letter-spacing: 2px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    a{
+        color: $mainColor;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .adress{
+        font-size: 20px;
+        color: #717280;
+    }
+    .mail{
+        font-size: 13px;
+        color: $mainColor;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            background: $mainColor;
+            transition: all .3s ease;
+        }
+        &::before{
+            width: 100%;
+            opacity: .3;
+        }
+        &::after{
+            width: 0%;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    .copyright{
+        font-size: 15px;
+        margin: 0;
+        color: #717280;
+    }
+    .menu{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                margin-bottom: 50px;
+                a{
+                    text-transform: uppercase;
+                    color: #343549;
+                    font-weight: bold;
+                    font-size: 13px;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
